@@ -1,0 +1,30 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+.venv/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Build and test artifacts
+build/
+dist/
+wheels/
+*.egg-info/
+.coverage
+htmlcov/
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db
