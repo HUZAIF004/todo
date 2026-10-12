@@ -24,7 +24,6 @@ A modern, production-ready Fullstack & RESTful Todo Application built with **Fas
   - Schema versioning and migration management with Alembic.
 - **Testing & Quality Assurance**:
   - Automated test suite using `pytest` and `httpx`.
-  - GitHub Actions CI pipeline automated via `uv`.
 
 ---
 
@@ -45,9 +44,6 @@ A modern, production-ready Fullstack & RESTful Todo Application built with **Fas
 
 ```text
 Todo/
-├── .github/
-│   └── workflows/
-│       └── ci.yml              # GitHub Actions CI workflow
 ├── alembic/                    # Alembic migration scripts and environment
 ├── alembic.ini                 # Alembic configuration
 ├── database.py                 # SQLAlchemy engine and session configuration
@@ -214,15 +210,6 @@ uv run pytest test/
 # Run with verbose output
 uv run pytest -v test/
 ```
-
----
-
-## 🤖 Continuous Integration
-
-This repository includes a GitHub Actions CI workflow in `.github/workflows/ci.yml` which automatically:
-- Installs Python 3.13 and `uv`
-- Resolves and installs dependencies from `uv.lock`
-- Executes all unit and integration tests across commits and pull requests
 
 ---
 
